@@ -7,10 +7,11 @@ namespace :slickgrid do
     cd "tmp/SlickGrid" do
       js_files = Dir.glob("*.js") +
         Dir.glob("plugins/*.js") +
-        Dir.glob("controls/*.js")
+        Dir.glob("controls/*.js") +
+        Dir.glob("lib/*.js")
 
       js_files.each do |file|
-        mkdir_p "../../vendor/assets/javascript/slick/#{File.dirname(file)}"
+        mkdir_p "../../vendor/assets/javascripts/slick/#{File.dirname(file)}"
         sh "cp #{file} ../../vendor/assets/javascripts/slick/#{file.gsub("slick.", "")}"
       end
 
