@@ -1,7 +1,8 @@
 //= require jquery
-//= require slick/lib/jquery.event.drag-2.0.min.js
+//= require slick/lib/jquery.event.drag-2.2
 //= require slick/core
+//= require slick/formatters
 //= require slick/grid
 //= require slick/dataview
 //= require slick/editors
-//= require slick/controls/columnpicker.js
+//= require slick/controls/columnpicker
