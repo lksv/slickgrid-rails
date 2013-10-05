@@ -189,3 +189,15 @@ body .grid .slick-header-columns .slick-header-column.ui-state-default {
 .info-col {
   padding: 20px;
 }
+
+
+.slick-cell.active {
+   border: 1px solid black !important;
+ }
+
+div.gird-order-indicator-asc:after {
+  content: "TODO: &#9650;";
+}
+div.gird-order-indicator-desc:after {
+  content: "TODO: &#9660;";
+}
